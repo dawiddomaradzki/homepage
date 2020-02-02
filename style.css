@@ -1,7 +1,9 @@
 body {
-    background: rgb(130, 185, 240);
+    background: #628395;
     text-align: center;
-    font-family: 'Gelasio', serif;    
+    font-family: 'Gelasio', serif; 
+    margin: 30px 100px;
+    min-width: 500px;   
 }
 
 
@@ -9,16 +11,17 @@ body {
     color: black;
     display: block;
     box-shadow: 0 5px 10px rgb(43, 47, 51);
-    background: rgb(10, 56, 102);
+    border-radius: 5px;
+    border: 5px solid black;
 }
 
-.h2 {
-    color: rgb(186, 199, 228);
-    background-color: #1460AA;
+.h2, .h3, .h1Style {
+    background-color: #DBAD6A;
+    
+    
 }
 
-
-.h3 {
-    display: block;
-    background: rgb(39, 128, 216);
+.h2, .h3 {
+    margin: 0;
+    padding: 5px;
 }
