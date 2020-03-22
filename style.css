@@ -1,5 +1,6 @@
 body {
-    background: #628395;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to right top, #233146, #283e5c, #2b4c73, #2c5b8b, #2b6aa3);
     font-family: 'Gelasio', serif; 
     margin: 30px 100px;
     min-width: 500px;   
@@ -16,10 +17,16 @@ body {
 }
 
 .description__object, .description__place, .about__header {
-    background-color: #DBAD6A;
+    background-color:#CCCF88;
     text-align: center;
     
     
+}
+
+.section__header {
+    background-color: rgb(136, 109, 69);
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .description__object, .description__place {
@@ -27,6 +34,17 @@ body {
     padding: 5px;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: "header header"
+    "content content"
+    "content content"
+    "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,minmax(1fr, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
 .navigation {
     display: flex;
     justify-content: center;
@@ -40,10 +58,14 @@ body {
 
 .navigation__link--click {
     text-decoration: none;
-    color: burlywood;
+    color: rgb(46, 30, 10);
 }
 
-.image-styling {
-    max-width: 700px;
-    max-height: 700px;
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
 }
